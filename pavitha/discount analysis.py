@@ -8,6 +8,7 @@ file_path = "D:/myProjects/data_visualtion/sales_data_sample.csv"
 with open(file_path, mode="r", encoding="Johab", errors="ignore") as file:
     content = file.read()
 data = pd.read_csv(io.StringIO(content))
+print("data")
 
 
 data['REVENUE_WITH_DISCOUNT'] = data['QUANTITYORDERED'] * data['PRICEEACH']
